@@ -1,4 +1,4 @@
-package com.sortedbits.akkatraining
+package com.sortedbits.learningakka
 
 import akka.actor.{Actor, ActorSystem, Props}
 
