@@ -1,8 +1,8 @@
 package com.sortedbits.learningakka
 
 import akka.actor.{Actor, ActorSystem, Props}
-import com.sortedbits.akkatraining.MusicController.{Play, Stop}
-import com.sortedbits.akkatraining.MusicPlayer.{StartMusic, StopMusic}
+import com.sortedbits.learningakka.MusicController.{Play, Stop}
+import com.sortedbits.learningakka.MusicPlayer.{StartMusic, StopMusic}
 
 object MusicController {
   sealed trait ControllerMsg

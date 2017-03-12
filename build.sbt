@@ -12,7 +12,7 @@ lazy val helloAkka = (project in file("hello-akka"))
   .settings(commonSettings)
   .settings(libraryDependencies ++= Dependencies.commonDependencies)
 
-lazy val playingWithActors = (project in file("playing-with-actors")
+lazy val playingWithActors = (project in file("playing-with-actors"))
   .settings(commonSettings)
   .settings(libraryDependencies ++= Dependencies.commonDependencies)
 
