@@ -1,5 +1,5 @@
 
-name := "akkatraining-root"
+name := "learning-akka-root"
 
 lazy val commonSettings = Seq(
   organization := "com.sortedbits.akkatraining", 

@@ -1,1 +1,1 @@
-# akkatraining
+# learning akka
