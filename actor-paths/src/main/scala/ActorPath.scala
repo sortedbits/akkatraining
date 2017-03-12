@@ -4,7 +4,7 @@ import akka.actor.{ActorSystem, Props, PoisonPill}
 
 object ActorPath extends App {
 
-  val system = ActorSystem("actor-paths")
+  val system = ActorSystem("actor-system")
 
   val counter1 = system.actorOf(Props[Counter], "counter")
   println(s"actor reference for counter1: $counter1")
@@ -20,7 +20,8 @@ object ActorPath extends App {
   println(s"actor reference for counter2: $counter2")
 
   val counterSelection2 = system.actorSelection("counter")
-  println(s"actor selection for counter2: $counterSelection2")
+  println(s"actor selection for counter2: $counterSelection1")
 
   system.terminate()
 }
+

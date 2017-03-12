@@ -1,6 +1,6 @@
 package com.sortedbits.learningakka
 
-import akka.actor.{Actor, ActorRef, ActorSystem}
+import akka.actor.Actor
 
 class Counter extends Actor {
 
