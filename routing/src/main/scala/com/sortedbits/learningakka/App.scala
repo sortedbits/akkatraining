@@ -1,6 +1,5 @@
 package com.sortedbits.learningakka
 
-
 import akka.actor.{ActorSystem, Props}
 import com.sortedbits.learningakka.Worker.Work
 
