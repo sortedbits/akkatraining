@@ -20,6 +20,10 @@ lazy val actorPaths = (project in file("actor-paths"))
   .settings(commonSettings)
   .settings(libraryDependencies ++= Dependencies.commonDependencies)
 
+lazy val routing = (project in file("routing"))
+  .settings(commonSettings)
+  .settings(libraryDependencies ++= Dependencies.commonDependencies)
+
 lazy val root = (project in file("."))
   .settings(commonSettings)
   .aggregate(helloAkka, playingWithActors)
