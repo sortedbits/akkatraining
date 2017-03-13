@@ -17,15 +17,3 @@ class Watcher extends Actor {
       println("Actor selection for actor doesn't live :(")
   }
 }
-
-object Watcher extends App {
-
-  val system = ActorSystem("watch-actor-selection")
-
-  val counter = system.actorOf(Props[Counter], "counter")
-  val watcher = system.actorOf(Props[Watcher], "watcher")
-
-  Thread.sleep(1000)
-
-  system.terminate()
-}

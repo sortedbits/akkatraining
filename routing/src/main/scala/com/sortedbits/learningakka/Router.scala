@@ -1,9 +1,9 @@
 package com.sortedbits.learningakka
 
-import akka.actor.{Actor, ActorRef, Props}
+import akka.actor.{ActorSystem, Actor, ActorRef, Props}
 import com.sortedbits.learningakka.Worker.Work
 
-class Router extends Actor {
+class RouterPool extends Actor {
 
   var routees: List[ActorRef] = _
 
@@ -19,3 +19,5 @@ class Router extends Actor {
       routees(util.Random.nextInt(routees.size)) forward msg
   }
 }
+
+

@@ -1,13 +1,14 @@
 package com.sortedbits.learningakka
 
+
 import akka.actor.{ActorSystem, Props}
 import com.sortedbits.learningakka.Worker.Work
 
 object Router extends App {
 
-  val system = ActorSystem("rotuer")
+  val system = ActorSystem("router")
 
-  val router = system.actorOf(Props[Router])
+  val router = system.actorOf(Props[RouterPool])
 
   router ! Work()
   router ! Work()
@@ -17,3 +18,4 @@ object Router extends App {
 
   system.terminate()
 }
+
