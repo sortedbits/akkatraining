@@ -1,10 +1,11 @@
+
 package com.sortedbits.learningakka
 
 import akka.actor.{ActorSystem, Props, PoisonPill}
 
 object ActorPath extends App {
 
-  val system = ActorSystem("actor-path")
+  val system = ActorSystem("actor-paths")
 
   val counter1 = system.actorOf(Props[Counter], "counter")
   println(s"actor reference for counter1: $counter1")

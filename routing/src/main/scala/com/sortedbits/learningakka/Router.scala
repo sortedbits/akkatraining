@@ -20,4 +20,11 @@ class RouterPool extends Actor {
   }
 }
 
+class RouterGroup(routees: List[String]) extends Actor {
 
+  def receive = {
+    case msg: Work =>
+      println("RouterGroup received Work message...")
+      context.actorSelection(routees(util.Random.nextInt(routees.size))) forward msg
+  }
+}
