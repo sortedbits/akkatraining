@@ -24,6 +24,10 @@ lazy val routing = (project in file("routing"))
   .settings(commonSettings)
   .settings(libraryDependencies ++= Dependencies.commonDependencies)
 
+lazy val hotswapBehavior = (project in file("hotswap-behavior"))
+  .settings(commonSettings)
+  .settings(libraryDependencies ++= Dependencies.commonDependencies)
+
 lazy val root = (project in file("."))
   .settings(commonSettings)
   .aggregate(helloAkka, playingWithActors)
