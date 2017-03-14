@@ -44,7 +44,7 @@ class UserStorage extends Actor with Stash {
   }
 }
 
-object BecomeHotwwap extends App {
+object BecomeHotswap extends App {
   import UserStorage._
 
   val system = ActorSystem("hotswap-become")
