@@ -32,6 +32,10 @@ lazy val persistence = (project in file("persistence"))
   .settings(commonSettings)
   .settings(libraryDependencies ++= Dependencies.persistenceDependencies)
 
+lazy val akkaRemoting = (project in file("akka-remoting"))
+  .settings(commonSettings)
+  .settings(libraryDependencies ++= Dependencies.remotingDependencies)
+
 lazy val root = (project in file("."))
   .settings(commonSettings)
   .aggregate(helloAkka, playingWithActors)

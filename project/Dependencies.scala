@@ -10,4 +10,8 @@ object Dependencies {
     "com.typesafe.akka" %% "akka-persistence" % "2.4.17",
     "com.typesafe.akka" %% "akka-persistence-experimental" % "2.3.16"
   )
+
+  val remotingDependencies : Seq [ModuleID] = Seq(
+    "com.typesafe.akka" %% "akka-remote" % "2.4.17"
+  )
 }
