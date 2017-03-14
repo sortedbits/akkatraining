@@ -28,6 +28,10 @@ lazy val hotswapBehavior = (project in file("hotswap-behavior"))
   .settings(commonSettings)
   .settings(libraryDependencies ++= Dependencies.commonDependencies)
 
+lazy val persistence = (project in file("persistence"))
+  .settings(commonSettings)
+  .settings(libraryDependencies ++= Dependencies.persistenceDependencies)
+
 lazy val root = (project in file("."))
   .settings(commonSettings)
   .aggregate(helloAkka, playingWithActors)
